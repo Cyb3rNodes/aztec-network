@@ -268,7 +268,7 @@ aztec start --node --archiver --sequencer \
   --network alpha-testnet \
   --l1-rpc-urls RPC_URL  \
   --l1-consensus-host-urls BEACON_URL \
-  --sequencer.validatorPrivateKey 0xYourPrivateKey \
+  --sequencer.validatorPrivateKeys 0xYourPrivateKey \
   --sequencer.coinbase 0xYourAddress \
   --p2p.p2pIp IP
 ```
@@ -375,7 +375,7 @@ aztec start --node --archiver --sequencer \
   --network alpha-testnet \
   --l1-rpc-urls RPC_URL  \
   --l1-consensus-host-urls BEACON_URL \
-  --sequencer.validatorPrivateKey 0xYourPrivateKey \
+  --sequencer.validatorPrivateKeys 0xYourPrivateKey \
   --sequencer.coinbase 0xYourAddress \
   --p2p.p2pIp IP
 ```
@@ -427,7 +427,7 @@ nano .env
 #
 
 ### CLI Method
-* 1- Update your CLI start command to use `--sequencer.validatorPrivateKeys` (see added `s`) instead of `--sequencer.validatorPrivateKey` if you want to run multiple validators.
+* 1- Update your CLI start command to use `--sequencer.validatorPrivateKeyss` (see added `s`) instead of `--sequencer.validatorPrivateKeys` if you want to run multiple validators.
   * The value of this should be a comma (`,`) separated list.
    
 * 2- Optional: Use `--sequencer.publisherPrivateKey` which will be the address the transactions are posted from. This means you only need to fund sepETH to this address if you run multiple validators.
@@ -438,7 +438,7 @@ aztec start --node --archiver --sequencer \
   --network alpha-testnet \
   --l1-rpc-urls RPC_URL  \
   --l1-consensus-host-urls BEACON_URL \
-  --sequencer.validatorPrivateKeys "0xPrivatekey1,0xPrivatekey2,0xPrivatekey3" \
+  --sequencer.validatorPrivateKeyss "0xPrivatekey1,0xPrivatekey2,0xPrivatekey3" \
   --sequencer.publisherPrivateKey 0xPrivatekeyX
   --sequencer.coinbase 0xYourAddress \
   --p2p.p2pIp IP
